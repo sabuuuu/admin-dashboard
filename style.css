@@ -1,0 +1,208 @@
+@font-face {
+    font-family: fbold;
+    src: url(font/fbold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: fregular;
+    src: url(font/fregular.ttf);
+    font-weight: 400;
+}
+
+:root{
+    --bg-color :#1b1a1f ;
+    --nav-color :#2a292f ;
+    --button-color :#f51d46;
+    --input-color :#201f24;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: fregular ,sans-serif;
+    background-color: var(--nav-color);
+}
+.container {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+header{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+    padding: 0 30px 0 0;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    grid-row: 1/2;
+}
+.hello {
+    grid-row: 2/3;
+    margin: 15px 30px;
+}
+.hello h1 {
+    margin: 0 0 10px 0;
+}
+.yourpro{
+    margin: 45px 0 0 0;
+}
+input {
+    height: 35px;
+    width: 200px;
+    border-radius: 45px;
+    padding-left: 30px;
+    border: none;
+    background-color: var(--input-color);
+}
+.search {
+    position: relative;
+    margin-right: 10%;
+    margin-left: 10px;
+}
+
+.searchpic {
+    position: absolute;
+    top: 7px;
+    left: 5px;
+    background-color: var(--input-color);
+}
+.user {
+    height: 36px;
+}
+
+.icons {
+    margin: 10px;
+}
+.icons img {
+    margin-left:10px;
+}
+nav {
+    grid-row: 1/6;
+    background-color: var(--bg-color);
+    border-radius:0 20px 20px 0 ;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    margin: 40px 0 50px 16%;
+    background-color: var(--bg-color);
+    cursor: pointer;
+    color: #ffffff;
+}
+.menu {
+    margin: 15px;
+
+}
+.menu li {
+    list-style: none;
+    background-color: var(--bg-color);
+}
+ul ,.logo img ,.logo h4{
+    background-color: var(--bg-color);
+}
+.menu button{
+    height: 45px;
+    width: 100%;
+    margin: 20px 0;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: var(--nav-color);
+    padding: 20px;
+    border-bottom: 1px solid var(--button-color);
+}
+
+button:hover img ,button:hover{
+    background-color: var(--button-color);
+}
+
+
+section{
+    grid-column: 2/3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+}
+.projects{
+    grid-column: 1/3;
+    grid-row: 1/5;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(250px,1fr));
+}
+.pro {
+    padding: 10px 25px 5px 25px;
+    margin: 20px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--bg-color);
+    border-radius: 20px;
+    border-bottom: 2px solid var(--button-color);
+}
+.pro p {
+    background-color: var(--bg-color);
+    color: whitesmoke;
+}
+.pro a {
+    text-decoration: none;
+    color: white;
+    background-color: var(--input-color);
+    height: 45px;
+    width: 100%;
+    border-radius: 8px;
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.pro a img {
+    height: 15px;
+    background-color: var(--input-color);
+    margin: 0 0 0 10px;
+}
+a:hover , a:hover img{
+    background-color: #f51d46;
+    color: var(--bg-color);
+    font-weight: bold;
+}
+
+.projects  img {
+    height: 40%;
+    margin-top: 15px;
+}
+.announcement {
+    grid-column: 3/4;
+    grid-row: 1/span 2 ;
+    color: gray;
+}
+.announcement > div {
+    margin: 25px 15px 35px 15px;
+    font-size: 13px;
+}
+
+.trending {
+    grid-row: 3/ span 2;
+    color: gray;
+}
+
+.trending img {
+    height: 45px;
+    margin: 10px;
+}
+.npc {
+    display: flex;
+    align-items: center;
+    margin: 15px;
+}
+
+
